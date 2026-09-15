@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+Data/
+backgrounds/
+data_synthetic/
+outputs/
+wandb/
+old/
+models/rps_mobilenetv2_prev.pt
+.DS_Store
