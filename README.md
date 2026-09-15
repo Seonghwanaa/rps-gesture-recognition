@@ -3,6 +3,13 @@
 웹캠으로 실시간 가위·바위·보 손 모양을 인식해 액션을 트리거하는 딥러닝 프로젝트.
 MobileNetV2(ImageNet) 전이학습 기반, 실전 웹캠 환경에서의 정확도 개선에 초점을 맞췄습니다.
 
+![Python](https://img.shields.io/badge/Python-3.11-3776AB)
+![PyTorch](https://img.shields.io/badge/PyTorch-2.13%20+cu126-EE4C2C)
+![MediaPipe](https://img.shields.io/badge/MediaPipe-1.0.1-00A67E)
+![OpenCV](https://img.shields.io/badge/OpenCV-5.0-5C3EE8)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-1.9-F7931E)
+![wandb](https://img.shields.io/badge/W&B-0.28-FFBE00)
+
 > **SeSAC 청년취업사관학교 팀 프로젝트 (2026.08)** · 포트폴리오용 사본입니다.
 > 원본 팀 저장소 — [BG-traveling/RPS-Project-V2](https://github.com/BG-traveling/RPS-Project-V2)
 
@@ -38,7 +45,18 @@ MediaPipe를 택한 이유는 검출 자체가 목적이 아니라 전처리였�
 
 ## 기술 스택
 
-`Python` `PyTorch` `MediaPipe` `OpenCV` `scikit-learn` `wandb`
+| 구분 | 사용 기술 | 버전 |
+|---|---|---|
+| 언어 | Python | 3.11 |
+| 딥러닝 | PyTorch · torchvision | 2.13.0+cu126 · 0.28.0 |
+| 손 검출 | MediaPipe | 1.0.1 |
+| 영상 처리 | OpenCV (contrib 포함) | 5.0.0.93 |
+| 데이터·평가 | scikit-learn · NumPy | 1.9.0 · 2.5.2 |
+| 실험 추적 | Weights & Biases | 0.28.2 |
+| 시각화 | matplotlib | 3.11.1 |
+
+> CUDA(GPU) 빌드 기준입니다. CPU 환경에서는 `torch`·`torchvision`을 CPU 휠로 교체하세요.
+> 전체 의존성은 [requirements.txt](requirements.txt) 참고.
 
 ## 프로젝트 구조
 
